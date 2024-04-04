@@ -295,7 +295,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 601.0, 1131.0, 101.0, 22.0 ],
-					"restore" : [ 0.392418975848454 ],
+					"restore" : [ 0.305052789026703 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -314,7 +314,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 730.0, 1165.0, 101.0, 22.0 ],
-					"restore" : [ 0.659849102457216 ],
+					"restore" : [ 0.679108203005024 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -333,7 +333,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 883.0, 1178.0, 101.0, 22.0 ],
-					"restore" : [ 0.906118982711679 ],
+					"restore" : [ 0.897687132447314 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -672,7 +672,7 @@
 ,
 						"valueof" : 						{
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_longname" : "live.toggle[27]",
+							"parameter_longname" : "live.toggle[5]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.toggle[1]",
 							"parameter_type" : 2
@@ -988,6 +988,7 @@
 			}
 , 			{
 				"box" : 				{
+					"drawpeaks" : 1,
 					"id" : "obj-56",
 					"maxclass" : "multislider",
 					"numinlets" : 1,
@@ -1315,7 +1316,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 144.0, 480.0, 59.0, 22.0 ],
-					"restore" : [ -0.307692381051879 ],
+					"restore" : [ -17.230769304128799 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -1506,7 +1507,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 571.0, 132.0, 61.0, 22.0 ],
-					"restore" : [ "A♭4" ],
+					"restore" : [ "E5" ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -1668,7 +1669,7 @@
 			}
 , 			{
 				"box" : 				{
-					"addpoints_with_curve" : [ 2.712765957446809, 0.0, 0, 0.0, 5.425531914893617, 34.0, 0, 0.0, 255.0, 255.0, 0, -0.545 ],
+					"addpoints_with_curve" : [ 2.712765957446809, 0.0, 0, 0.0, 3.164920188645099, 16.433310365676881, 0, 0.0, 255.0, 255.0, 0, -0.545 ],
 					"classic_curve" : 1,
 					"domain" : 255.0,
 					"id" : "obj-40",
@@ -1916,7 +1917,7 @@
 					"presentation_rect" : [ 28.0, 5.599999904632568, 48.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.gain~[6]",
+							"parameter_longname" : "live.gain~",
 							"parameter_mmax" : 20.0,
 							"parameter_mmin" : -70.0,
 							"parameter_shortname" : "gain",
