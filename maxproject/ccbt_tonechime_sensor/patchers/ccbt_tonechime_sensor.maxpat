@@ -338,7 +338,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 146.5, 160.0, 101.0, 22.0 ],
-					"restore" : [ 1.0 ],
+					"restore" : [ 0.0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -450,7 +450,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 131.0, 1399.0, 153.0, 22.0 ],
+					"patching_rect" : [ 131.0, 1396.0, 153.0, 22.0 ],
 					"text" : "regexp usbserial\\\\-EN[0-9]*"
 				}
 
@@ -906,7 +906,7 @@
 					"patching_rect" : [ 1203.0, 1458.0, 100.0, 50.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 668.0, 242.5, 93.0, 20.0 ],
-					"text" : "192.168.1.2",
+					"text" : "localhost",
 					"varname" : "host"
 				}
 
@@ -1570,11 +1570,11 @@
 						"objectsnaponopen" : 1,
 						"statusbarvisible" : 2,
 						"toolbarvisible" : 1,
-						"lefttoolbarpinned" : 0,
-						"toptoolbarpinned" : 0,
-						"righttoolbarpinned" : 0,
-						"bottomtoolbarpinned" : 0,
-						"toolbars_unpinned_last_save" : 0,
+						"lefttoolbarpinned" : 2,
+						"toptoolbarpinned" : 2,
+						"righttoolbarpinned" : 2,
+						"bottomtoolbarpinned" : 2,
+						"toolbars_unpinned_last_save" : 15,
 						"tallnewobj" : 0,
 						"boxanimatetime" : 200,
 						"enablehscroll" : 1,
@@ -2089,7 +2089,7 @@
 									"restore" : 									{
 										"audio_interrupt" : [ "Off" ],
 										"driver" : [ 1 ],
-										"dsp" : [ "On" ],
+										"dsp" : [ "Off" ],
 										"input_device" : [ "MacBook Airのマイク" ],
 										"io_vector_size" : [ "256" ],
 										"output_device" : [ "MacBook Airのスピーカー" ],
@@ -2532,19 +2532,19 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 318.0, 342.5, 85.0, 22.0 ],
 					"restore" : 					{
-						"DMX_enable" : [ 1.0 ],
+						"DMX_enable" : [ 0.0 ],
 						"OSC_enable" : [ 1.0 ],
-						"envelope" : [ 255.0, 0.0, 255.0, 2.712765957446809, 0.0, 0, 0.0, 3.164920188645099, 16.433310365676881, 0, 0.0, 255.0, 255.0, 0, -0.545, "curve" ],
-						"host" : [ "192.168.1.2" ],
-						"inputmax" : [ 0.049057097595331 ],
+						"envelope" : [ 255.0, 0.0, 255.0, 2.712765957446809, 0.0, 0, 0.0, 5.425531914893617, 34.0, 0, 0.0, 255.0, 255.0, 0, -0.545, "curve" ],
+						"host" : [ "localhost" ],
+						"inputmax" : [ 0.068320397127281 ],
 						"localmode" : [ 1.0 ],
 						"outputmax" : [ 255.0 ],
-						"slidedown" : [ 6.836181072524647 ],
-						"slideup" : [ 0.610001205877825 ],
-						"thresh_attack" : [ -24.945866141732278 ],
-						"thresh_high" : [ -0.9375 ],
-						"thresh_low" : [ -10.3125 ],
-						"thresh_mid" : [ -3.361220472440944 ]
+						"slidedown" : [ 10.520998420214255 ],
+						"slideup" : [ 0.0 ],
+						"thresh_attack" : [ -26.875 ],
+						"thresh_high" : [ -2.65625 ],
+						"thresh_low" : [ -9.729330708661417 ],
+						"thresh_mid" : [ -5.46875 ]
 					}
 ,
 					"text" : "autopattr main",
@@ -2610,7 +2610,7 @@
 					"patching_rect" : [ 6.0, 11.0, 382.0, 34.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 6.0, 4.0, 382.0, 34.0 ],
-					"text" : "ToneChime DMX/OSC Controller"
+					"text" : "VisVib - DMX/OSC Controller"
 				}
 
 			}
@@ -2925,7 +2925,7 @@
 			}
 , 			{
 				"box" : 				{
-					"addpoints_with_curve" : [ 2.712765957446809, 0.0, 0, 0.0, 3.164920188645099, 16.433310365676881, 0, 0.0, 255.0, 255.0, 0, -0.545 ],
+					"addpoints_with_curve" : [ 2.712765957446809, 0.0, 0, 0.0, 5.425531914893617, 34.0, 0, 0.0, 255.0, 255.0, 0, -0.545 ],
 					"classic_curve" : 1,
 					"domain" : 255.0,
 					"id" : "obj-44",
@@ -3312,7 +3312,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 198.0, 1457.0, 52.0, 22.0 ],
+					"patching_rect" : [ 198.0, 1467.0, 52.0, 22.0 ],
 					"text" : "open $1"
 				}
 
@@ -4020,7 +4020,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
-					"midpoints" : [ 360.5, 1486.0, 59.5, 1486.0 ],
+					"midpoints" : [ 360.5, 1498.0, 59.5, 1498.0 ],
 					"source" : [ "obj-40", 0 ]
 				}
 
