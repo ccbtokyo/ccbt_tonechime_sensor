@@ -40,6 +40,295 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-168",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 976.0, 1584.0, 29.5, 22.0 ],
+					"text" : "set"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-166",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 976.0, 1535.0, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-164",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 381.0, 1400.0, 29.5, 22.0 ],
+					"text" : "set"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-160",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 8,
+							"minor" : 6,
+							"revision" : 0,
+							"architecture" : "x64",
+							"modernui" : 1
+						}
+,
+						"classnamespace" : "box",
+						"rect" : [ 59.0, 106.0, 640.0, 480.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"gridonopen" : 1,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
+						"boxanimatetime" : 200,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
+						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-9",
+									"linecount" : 3,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 105.0, 45.0, 150.0, 47.0 ],
+									"text" : "do not connect other usb serial devices than USB DMX PRO."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-6",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 5,
+									"outlettype" : [ "", "", "", "", "" ],
+									"patching_rect" : [ 276.0, 213.0, 105.0, 22.0 ],
+									"text" : "regexp COM[0-9]*"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-3",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 277.0, 156.0, 150.0, 20.0 ],
+									"text" : "Windows"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-2",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 95.0, 156.0, 150.0, 20.0 ],
+									"text" : "macOS"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-148",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 135.0, 245.0, 103.0, 22.0 ],
+									"text" : "sprintf /dev/cu.%s"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-146",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 50.0, 100.0, 32.0, 22.0 ],
+									"text" : "print"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-140",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 5,
+									"outlettype" : [ "", "", "", "", "" ],
+									"patching_rect" : [ 68.0, 213.0, 153.0, 22.0 ],
+									"text" : "regexp usbserial\\\\-EN[0-9]*"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-139",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 68.0, 155.0, 25.0, 22.0 ],
+									"text" : "iter"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-138",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "int", "" ],
+									"patching_rect" : [ 50.0, 129.0, 37.0, 22.0 ],
+									"text" : "serial"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-155",
+									"index" : 1,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 50.0, 40.0, 30.0, 30.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-157",
+									"index" : 1,
+									"maxclass" : "outlet",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 135.0, 327.0, 30.0, 30.0 ]
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-139", 0 ],
+									"source" : [ "obj-138", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-140", 0 ],
+									"order" : 1,
+									"source" : [ "obj-139", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-6", 0 ],
+									"midpoints" : [ 77.5, 198.0, 285.5, 198.0 ],
+									"order" : 0,
+									"source" : [ "obj-139", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-148", 0 ],
+									"source" : [ "obj-140", 2 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-138", 0 ],
+									"source" : [ "obj-146", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-157", 0 ],
+									"source" : [ "obj-148", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-146", 0 ],
+									"source" : [ "obj-155", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-157", 0 ],
+									"midpoints" : [ 328.5, 312.0, 144.5, 312.0 ],
+									"source" : [ "obj-6", 2 ]
+								}
+
+							}
+ ]
+					}
+,
+					"patching_rect" : [ 113.0, 1344.0, 108.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"description" : "",
+						"digest" : "",
+						"globalpatchername" : "",
+						"tags" : ""
+					}
+,
+					"text" : "p find_serialdevice"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-117",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -307,14 +596,12 @@
 				"box" : 				{
 					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"id" : "obj-163",
-					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 264.0, 1519.0, 150.0, 33.0 ],
+					"patching_rect" : [ 264.0, 1446.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 633.5, 168.0, 191.0, 20.0 ],
-					"text" : "/dev/cu.usbserial-EN396191"
+					"presentation_rect" : [ 633.5, 168.0, 191.0, 20.0 ]
 				}
 
 			}
@@ -325,7 +612,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 264.0, 1460.0, 41.0, 22.0 ],
+					"patching_rect" : [ 264.0, 1400.0, 41.0, 22.0 ],
 					"text" : "set $1"
 				}
 
@@ -338,7 +625,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 146.5, 160.0, 101.0, 22.0 ],
-					"restore" : [ 0.0 ],
+					"restore" : [ 1.0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -421,72 +708,12 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-148",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 198.0, 1428.0, 103.0, 22.0 ],
-					"text" : "sprintf /dev/cu.%s"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-146",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 113.0, 1314.0, 32.0, 22.0 ],
-					"text" : "print"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-140",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 5,
-					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 131.0, 1396.0, 153.0, 22.0 ],
-					"text" : "regexp usbserial\\\\-EN[0-9]*"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-139",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 131.0, 1369.0, 25.0, 22.0 ],
-					"text" : "iter"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-138",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "int", "" ],
-					"patching_rect" : [ 113.0, 1343.0, 37.0, 22.0 ],
-					"text" : "serial"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-129",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 449.0, 1344.0, 29.5, 22.0 ],
+					"patching_rect" : [ 542.0, 1344.0, 29.5, 22.0 ],
 					"text" : "128"
 				}
 
@@ -786,7 +1013,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "bang" ],
-					"patching_rect" : [ 351.0, 1289.0, 74.0, 22.0 ],
+					"patching_rect" : [ 444.0, 1289.0, 74.0, 22.0 ],
 					"text" : "t b b"
 				}
 
@@ -810,7 +1037,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 406.0, 1344.0, 29.5, 22.0 ],
+					"patching_rect" : [ 499.0, 1344.0, 29.5, 22.0 ],
 					"text" : "0"
 				}
 
@@ -823,7 +1050,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 406.0, 1411.0, 132.0, 35.0 ],
+					"patching_rect" : [ 499.0, 1411.0, 132.0, 35.0 ],
 					"text" : "1 $1, 2 $1, 3 $1, 4 $1, 5 $1, 6 $1, 7 $1, 8 $1"
 				}
 
@@ -1010,8 +1237,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 912.0, 1618.0, 119.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 674.0, 214.0, 119.0, 20.0 ],
-					"text" : "/trigger/8 0"
+					"presentation_rect" : [ 674.0, 214.0, 119.0, 20.0 ]
 				}
 
 			}
@@ -1124,11 +1350,11 @@
 				"box" : 				{
 					"id" : "obj-69",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 471.5, 167.0, 34.0, 22.0 ],
-					"text" : "sel 1"
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"outlettype" : [ "bang", "bang", "" ],
+					"patching_rect" : [ 471.5, 167.0, 44.0, 22.0 ],
+					"text" : "sel 1 0"
 				}
 
 			}
@@ -1257,7 +1483,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 351.0, 1344.0, 37.0, 22.0 ],
+					"patching_rect" : [ 444.0, 1344.0, 37.0, 22.0 ],
 					"text" : "close"
 				}
 
@@ -1974,7 +2200,7 @@
 								"box" : 								{
 									"allowdrag" : 0,
 									"id" : "obj-36",
-									"items" : [ "None", ",", "MacBook Airのスピーカー", ",", "ZoomAudioDevice" ],
+									"items" : [ "None", ",", "DELL U2520D", ",", "MacBook Airのスピーカー", ",", "ZoomAudioDevice" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -2089,7 +2315,7 @@
 									"restore" : 									{
 										"audio_interrupt" : [ "Off" ],
 										"driver" : [ 1 ],
-										"dsp" : [ "Off" ],
+										"dsp" : [ "On" ],
 										"input_device" : [ "MacBook Airのマイク" ],
 										"io_vector_size" : [ "256" ],
 										"output_device" : [ "MacBook Airのスピーカー" ],
@@ -2561,10 +2787,10 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 414.0, 380.5, 183.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 4, 44, 358, 172 ],
+						"client_rect" : [ 100, 159, 454, 287 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
-						"storage_rect" : [ 583, 69, 1034, 197 ]
+						"storage_rect" : [ 100, 159, 612, 778 ]
 					}
 ,
 					"text" : "pattrstorage main @savemode 2",
@@ -2581,7 +2807,7 @@
 					"patching_rect" : [ 6.0, 69.0, 197.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 6.0, 69.0, 197.0, 20.0 ],
-					"text" : "2024.06.13"
+					"text" : "2024.06.18"
 				}
 
 			}
@@ -2619,10 +2845,10 @@
 					"id" : "obj-132",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "bang", "bang" ],
-					"patching_rect" : [ 113.0, 1284.0, 203.0, 22.0 ],
-					"text" : "t b b"
+					"numoutlets" : 3,
+					"outlettype" : [ "bang", "bang", "bang" ],
+					"patching_rect" : [ 113.0, 1284.0, 284.0, 22.0 ],
+					"text" : "t b b b"
 				}
 
 			}
@@ -2633,7 +2859,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 297.0, 1344.0, 39.0, 22.0 ],
+					"patching_rect" : [ 245.5, 1344.0, 39.0, 22.0 ],
 					"text" : "menu"
 				}
 
@@ -3312,7 +3538,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 198.0, 1467.0, 52.0, 22.0 ],
+					"patching_rect" : [ 113.0, 1456.0, 52.0, 22.0 ],
 					"text" : "open $1"
 				}
 
@@ -3587,7 +3813,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
-					"midpoints" : [ 306.5, 1505.0, 59.5, 1505.0 ],
+					"midpoints" : [ 255.0, 1508.0, 59.5, 1508.0 ],
 					"source" : [ "obj-131", 0 ]
 				}
 
@@ -3601,29 +3827,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-146", 0 ],
+					"destination" : [ "obj-160", 0 ],
 					"source" : [ "obj-132", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-139", 0 ],
-					"source" : [ "obj-138", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-140", 0 ],
-					"source" : [ "obj-139", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-148", 0 ],
-					"source" : [ "obj-140", 2 ]
+					"destination" : [ "obj-164", 0 ],
+					"midpoints" : [ 387.5, 1308.0, 390.5, 1308.0 ],
+					"source" : [ "obj-132", 2 ]
 				}
 
 			}
@@ -3644,31 +3857,8 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-40", 0 ],
-					"midpoints" : [ 360.5, 1331.0, 360.5, 1331.0 ],
+					"midpoints" : [ 453.5, 1331.0, 453.5, 1331.0 ],
 					"source" : [ "obj-143", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-138", 0 ],
-					"source" : [ "obj-146", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-161", 0 ],
-					"order" : 0,
-					"source" : [ "obj-148", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-24", 0 ],
-					"order" : 1,
-					"source" : [ "obj-148", 0 ]
 				}
 
 			}
@@ -3733,8 +3923,45 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-161", 0 ],
+					"order" : 0,
+					"source" : [ "obj-160", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-24", 0 ],
+					"order" : 1,
+					"source" : [ "obj-160", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-163", 0 ],
 					"source" : [ "obj-161", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-163", 0 ],
+					"source" : [ "obj-164", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-168", 0 ],
+					"source" : [ "obj-166", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-32", 0 ],
+					"source" : [ "obj-168", 0 ]
 				}
 
 			}
@@ -3862,7 +4089,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
-					"midpoints" : [ 207.5, 1504.0, 59.5, 1504.0 ],
+					"midpoints" : [ 122.5, 1503.0, 59.5, 1503.0 ],
 					"source" : [ "obj-24", 0 ]
 				}
 
@@ -4020,7 +4247,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
-					"midpoints" : [ 360.5, 1498.0, 59.5, 1498.0 ],
+					"midpoints" : [ 453.5, 1503.0, 59.5, 1503.0 ],
 					"source" : [ "obj-40", 0 ]
 				}
 
@@ -4248,6 +4475,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-99", 0 ],
+					"source" : [ "obj-69", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-65", 0 ],
 					"source" : [ "obj-70", 1 ]
 				}
@@ -4273,7 +4507,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-51", 1 ],
 					"midpoints" : [ 788.5, 495.0, 229.0, 495.0 ],
-					"order" : 6,
+					"order" : 0,
 					"source" : [ "obj-72", 0 ]
 				}
 
@@ -4282,7 +4516,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-52", 1 ],
 					"midpoints" : [ 788.5, 495.0, 349.0, 495.0 ],
-					"order" : 5,
+					"order" : 1,
 					"source" : [ "obj-72", 0 ]
 				}
 
@@ -4291,7 +4525,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-54", 1 ],
 					"midpoints" : [ 788.5, 495.0, 468.0, 495.0 ],
-					"order" : 4,
+					"order" : 2,
 					"source" : [ "obj-72", 0 ]
 				}
 
@@ -4300,7 +4534,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-55", 1 ],
 					"midpoints" : [ 788.5, 495.0, 946.0, 495.0 ],
-					"order" : 3,
+					"order" : 6,
 					"source" : [ "obj-72", 0 ]
 				}
 
@@ -4309,7 +4543,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-56", 1 ],
 					"midpoints" : [ 788.5, 495.0, 827.0, 495.0 ],
-					"order" : 2,
+					"order" : 5,
 					"source" : [ "obj-72", 0 ]
 				}
 
@@ -4318,7 +4552,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-57", 1 ],
 					"midpoints" : [ 788.5, 495.0, 707.0, 495.0 ],
-					"order" : 1,
+					"order" : 4,
 					"source" : [ "obj-72", 0 ]
 				}
 
@@ -4327,7 +4561,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-59", 1 ],
 					"midpoints" : [ 788.5, 495.0, 588.0, 495.0 ],
-					"order" : 0,
+					"order" : 3,
 					"source" : [ "obj-72", 0 ]
 				}
 
@@ -4387,7 +4621,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-53", 0 ],
-					"midpoints" : [ 59.5, 1504.0, 32.5, 1504.0 ],
+					"midpoints" : [ 59.5, 1503.0, 32.5, 1503.0 ],
 					"order" : 1,
 					"source" : [ "obj-79", 0 ]
 				}
@@ -4396,6 +4630,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
+					"midpoints" : [ 59.5, 1311.0, 59.5, 1311.0 ],
 					"order" : 0,
 					"source" : [ "obj-79", 0 ]
 				}
@@ -4479,7 +4714,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
-					"midpoints" : [ 415.5, 1504.0, 59.5, 1504.0 ],
+					"midpoints" : [ 508.5, 1503.0, 59.5, 1503.0 ],
 					"source" : [ "obj-90", 0 ]
 				}
 
@@ -4613,8 +4848,12 @@
 				}
 ,
 				"obj-49::obj-44" : 				{
+					"parameter_invisible" : 0,
 					"parameter_longname" : "live.dial",
+					"parameter_modmode" : 0,
+					"parameter_range" : [ 0, 127 ],
 					"parameter_shortname" : "Pitch",
+					"parameter_type" : 1,
 					"parameter_unitstyle" : 8
 				}
 ,

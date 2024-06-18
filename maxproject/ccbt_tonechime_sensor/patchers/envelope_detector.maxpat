@@ -139,7 +139,7 @@
 						"valueof" : 						{
 							"parameter_longname" : "live.dial",
 							"parameter_shortname" : "Pitch",
-							"parameter_type" : 0,
+							"parameter_type" : 1,
 							"parameter_unitstyle" : 8
 						}
 
@@ -406,7 +406,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 634.0, 1170.0, 101.0, 22.0 ],
-					"restore" : [ 0.305052789026703 ],
+					"restore" : [ 0.326237187636499 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -425,7 +425,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 789.0, 1170.0, 101.0, 22.0 ],
-					"restore" : [ 0.679108203005024 ],
+					"restore" : [ 0.532797894586564 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -444,7 +444,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 940.0, 1170.0, 101.0, 22.0 ],
-					"restore" : [ 0.897687132447314 ],
+					"restore" : [ 0.736525012271228 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -1255,7 +1255,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 94.5, 345.0, 50.0, 22.0 ],
-					"text" : "3"
+					"text" : "2"
 				}
 
 			}
@@ -1415,7 +1415,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 144.0, 480.0, 59.0, 22.0 ],
-					"restore" : [ -17.230769304128799 ],
+					"restore" : [ 0.0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -1530,7 +1530,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 561.25, 132.0, 61.0, 22.0 ],
-					"restore" : [ 72.000000000000114 ],
+					"restore" : [ 79.999999999999915 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -1639,7 +1639,7 @@
 			}
 , 			{
 				"box" : 				{
-					"addpoints_with_curve" : [ 2.712765957446809, 0.0, 0, 0.0, 3.164920188645099, 16.433310365676881, 0, 0.0, 255.0, 255.0, 0, -0.545 ],
+					"addpoints_with_curve" : [ 2.712765957446809, 0.0, 0, 0.0, 5.425531914893617, 34.0, 0, 0.0, 255.0, 255.0, 0, -0.545 ],
 					"classic_curve" : 1,
 					"domain" : 255.0,
 					"id" : "obj-40",
