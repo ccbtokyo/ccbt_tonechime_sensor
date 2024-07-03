@@ -2,7 +2,7 @@
 	"name" : "ccbt_tonechime_sensor",
 	"version" : 1,
 	"creationdate" : 3780925345,
-	"modificationdate" : 3791260346,
+	"modificationdate" : 3801612746,
 	"viewrect" : [ 50.0, 131.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -66,6 +66,11 @@
 ,
 		"externals" : 		{
 			"dmxusbpro.mxo" : 			{
+				"kind" : "object",
+				"local" : 1
+			}
+,
+			"dmxusbpro.mxe64" : 			{
 				"kind" : "object",
 				"local" : 1
 			}

@@ -40,6 +40,21 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontsize" : 14.0,
+					"id" : "obj-30",
+					"maxclass" : "live.comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 508.0, 189.0, 212.0, 23.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 510.0, 192.0, 167.0, 23.0 ],
+					"text" : "Video",
+					"textjustification" : 0
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-168",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -726,7 +741,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1164.0, 146.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 90.0, 143.0, 69.0, 20.0 ],
+					"presentation_rect" : [ 91.0, 139.0, 69.0, 20.0 ],
 					"text" : "Range"
 				}
 
@@ -910,7 +925,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1296.0, 524.0, 60.0, 41.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 257.0, 232.0, 60.0, 41.0 ],
+					"presentation_rect" : [ 257.0, 139.0, 60.0, 41.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.slider[6]",
@@ -938,7 +953,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1213.0, 524.0, 60.0, 41.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 257.0, 185.0, 60.0, 41.0 ],
+					"presentation_rect" : [ 257.0, 183.0, 60.0, 41.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.slider[5]",
@@ -966,7 +981,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1130.0, 524.0, 60.0, 41.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 257.0, 139.0, 60.0, 41.0 ],
+					"presentation_rect" : [ 257.0, 232.25, 60.0, 41.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.slider[4]",
@@ -1237,7 +1252,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 912.0, 1618.0, 119.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 674.0, 214.0, 119.0, 20.0 ]
+					"presentation_rect" : [ 674.0, 214.0, 119.0, 20.0 ],
+					"text" : "/trigger/1 0"
 				}
 
 			}
@@ -1459,8 +1475,8 @@
 
 					}
 ,
-					"text" : "OSC_DISABLE",
-					"texton" : "OSC_ENABLE",
+					"text" : "OSC",
+					"texton" : "OSC",
 					"varname" : "OSC_enable"
 				}
 
@@ -1620,7 +1636,7 @@
 
 					}
 ,
-					"text" : "Open Audio Setting",
+					"text" : "Audio Setting",
 					"varname" : "live.text[2]"
 				}
 
@@ -1812,6 +1828,7 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Arial",
@@ -2200,7 +2217,7 @@
 								"box" : 								{
 									"allowdrag" : 0,
 									"id" : "obj-36",
-									"items" : [ "None", ",", "DELL U2520D", ",", "MacBook Airのスピーカー", ",", "ZoomAudioDevice" ],
+									"items" : [ "None", ",", "MacBook Airのスピーカー", ",", "ZoomAudioDevice" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -2768,7 +2785,7 @@
 						"slidedown" : [ 10.520998420214255 ],
 						"slideup" : [ 0.0 ],
 						"thresh_attack" : [ -26.875 ],
-						"thresh_high" : [ -2.65625 ],
+						"thresh_high" : [ -2.664862204724418 ],
 						"thresh_low" : [ -9.729330708661417 ],
 						"thresh_mid" : [ -5.46875 ]
 					}
@@ -4507,7 +4524,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-51", 1 ],
 					"midpoints" : [ 788.5, 495.0, 229.0, 495.0 ],
-					"order" : 0,
+					"order" : 6,
 					"source" : [ "obj-72", 0 ]
 				}
 
@@ -4516,7 +4533,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-52", 1 ],
 					"midpoints" : [ 788.5, 495.0, 349.0, 495.0 ],
-					"order" : 1,
+					"order" : 5,
 					"source" : [ "obj-72", 0 ]
 				}
 
@@ -4525,7 +4542,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-54", 1 ],
 					"midpoints" : [ 788.5, 495.0, 468.0, 495.0 ],
-					"order" : 2,
+					"order" : 4,
 					"source" : [ "obj-72", 0 ]
 				}
 
@@ -4534,7 +4551,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-55", 1 ],
 					"midpoints" : [ 788.5, 495.0, 946.0, 495.0 ],
-					"order" : 6,
+					"order" : 3,
 					"source" : [ "obj-72", 0 ]
 				}
 
@@ -4543,7 +4560,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-56", 1 ],
 					"midpoints" : [ 788.5, 495.0, 827.0, 495.0 ],
-					"order" : 5,
+					"order" : 2,
 					"source" : [ "obj-72", 0 ]
 				}
 
@@ -4552,7 +4569,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-57", 1 ],
 					"midpoints" : [ 788.5, 495.0, 707.0, 495.0 ],
-					"order" : 4,
+					"order" : 1,
 					"source" : [ "obj-72", 0 ]
 				}
 
@@ -4561,7 +4578,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-59", 1 ],
 					"midpoints" : [ 788.5, 495.0, 588.0, 495.0 ],
-					"order" : 3,
+					"order" : 0,
 					"source" : [ "obj-72", 0 ]
 				}
 
